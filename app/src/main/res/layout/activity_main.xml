@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/anaRenk"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Toolbar içine yazı yazma  -->
+        <!-- Toolbar bitiminde parantezi </androidx.appcompat.widget.Toolbar> olarak ayarladık  -->
+        <!-- TextView olarak yeni nesne oluşturduk -->
+        <!-- Text, textSize, textColor, layout_gravity ile tanımladık  -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/cabin_sketch"
+            android:text="Kolap"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            tools:layout_editor_absoluteX="173dp"
+            tools:layout_editor_absoluteY="14dp" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:backgroundTint="@color/white"
+            android:fontFamily="sans-serif"
+            android:insetLeft="8dp"
+            android:text="@string/buttonYaziDetay"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:icon="@drawable/baseline_arrow_back_24"
+            app:iconPadding="8dp"
+            app:iconTint="@color/black"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:background="@color/anaRenk"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        app:srcCompat="@drawable/shoesrbg" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/ayakkabiBaslik"
+        android:textColor="@color/yaziRenk2"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/kod"
+        android:textAlignment="textStart"
+        android:textColor="@color/coderenk"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/size"
+        android:textColor="@color/yaziRenk2"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/fiyatYazi"
+        android:textAlignment="center"
+        android:textColor="@color/yaziRenk2"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/chip7"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="43"
+        android:textAlignment="center"
+        android:textColor="@color/chipyazi"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:chipBackgroundColor="@color/chipback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chip6"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="38"
+        android:textAlignment="center"
+        android:textColor="@color/chipyazi"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:chipBackgroundColor="@color/chipback"
+        app:layout_constraintEnd_toStartOf="@+id/chip3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="39"
+        android:textAlignment="center"
+        android:textColor="@color/chipyazi"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:chipBackgroundColor="@color/chipback"
+        app:layout_constraintEnd_toStartOf="@+id/chip4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chip2"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="40"
+        android:textAlignment="center"
+        android:textColor="@color/chipyazi"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:chipBackgroundColor="@color/chipback"
+        app:layout_constraintEnd_toStartOf="@+id/chip5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chip3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="41"
+        android:textAlignment="center"
+        android:textColor="@color/chipyazi"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:chipBackgroundColor="@color/chipback"
+        app:layout_constraintEnd_toStartOf="@+id/chip6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chip4"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="42"
+        android:textAlignment="center"
+        android:textColor="@color/chipyazi"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:chipBackgroundColor="@color/anaRenk"
+        app:layout_constraintEnd_toStartOf="@+id/chip"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chip5"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip7"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/favorite"
+        android:textAlignment="center"
+        android:textColor="@color/chipyazi"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:chipBackgroundColor="@color/anaRenk"
+        app:chipIcon="@drawable/hearth_cart_24"
+        app:layout_constraintBottom_toTopOf="@+id/chip5"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/yanRenk"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/buttonYaziSepet"
+        android:textAlignment="center"
+        android:textColor="@color/chipyazi"
+        app:icon="@drawable/baseline_add_shopping_cart_24"
+        app:iconTint="@color/chipyazi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Kolap</string>
+    <string name="ayakkabiBaslik">Dunk Hi Retro</string>
+    <string name="kod">code - 2323233232</string>
+    <string name="favorite">Favorite</string>
+    <string name="size">Size</string>
+    <string name="fiyatYazi">$ 45,3</string>
+    <string name="buttonYaziSepet">Add to Bag</string>
+    <string name="buttonYaziDetay">Details</string>
+</resources>

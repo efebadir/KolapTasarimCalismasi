@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Renkler -->
+    <color name="anaRenk">#8C9EFF</color>
+    <color name="yaziRenk">#FFFFFF</color>
+    <color name="coderenk">#C9C9C9</color>
+    <color name="yaziRenk2">#FFFFFFFF</color>
+    <color name="yanRenk">#8C9EFF</color>
+    <color name="chipyazi">#FF000000</color>
+    <color name="chipback">#FFFFFFFF</color>
+</resources>
