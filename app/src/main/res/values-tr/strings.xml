@@ -1,4 +1,5 @@
 <resources>
+    <!-- Türkçe olmasını uygun görmedim ayakkabbı isminin -->
     <string name="app_name">Kolap</string>
     <string name="ayakkabiBaslik">Dunk Hi Retro</string>
     <string name="kod">kod - 2323233232</string>
